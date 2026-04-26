@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto · Viviana Núñez</title>
+  <meta name="description" content="Contame sobre tu proyecto y te respondo a la brevedad. Diseño web para pequeños negocios." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-1 4-3 6-7 7 4 1 6 3 7 7 1-4 3-6 7-7-4-1-6-3-7-7z"/></svg>
+      <span>VN</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="quien-soy.html">Quién soy</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="#" aria-label="Instagram"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+      <a href="#" aria-label="Email"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+    </div>
+    <button class="nav-toggle" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container page-hero-grid">
+    <div>
+      <h1>Hablemos</h1>
+      <p>Contame sobre tu proyecto y te respondo a la brevedad.</p>
+    </div>
+    <div class="page-hero-image">
+      <img src="images/contact-vase.jpg" alt="Decoración" />
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+    <form class="contact-form" id="contact-form">
+      <h3>Contame sobre tu proyecto</h3>
+
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Tu email</label>
+        <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="negocio">Nombre de tu negocio</label>
+        <input id="negocio" name="negocio" type="text" placeholder="Tu negocio" />
+      </div>
+
+      <div class="form-group">
+        <label for="necesitas">¿Qué necesitás?</label>
+        <select id="necesitas" name="necesitas" required>
+          <option value="">Seleccioná una opción</option>
+          <option>Landing page</option>
+          <option>Web completa</option>
+          <option>Rediseño</option>
+          <option>No lo sé aún</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="presupuesto">Presupuesto estimado (opcional)</label>
+        <select id="presupuesto" name="presupuesto">
+          <option value="">Seleccioná un rango</option>
+          <option>Hasta $100.000</option>
+          <option>$100.000 — $200.000</option>
+          <option>Más de $200.000</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Contame más sobre tu proyecto</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribí tu mensaje aquí..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="contact-submit">Enviar mensaje</button>
+      <p id="contact-feedback" style="margin-top:12px;font-size:14px;"></p>
+    </form>
+
+    <aside class="contact-info">
+      <h3>O escribime por aquí</h3>
+      <div class="info-item">
+        <div class="icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <div><h4>WhatsApp</h4><p>Escribime directamente</p></div>
+      </div>
+      <div class="info-item">
+        <div class="icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <div><h4>Email</h4><p>hola@tudominio.com</p></div>
+      </div>
+      <div class="info-item">
+        <div class="icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></div>
+        <div><h4>Instagram</h4><p>@tuusuario</p></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 32px;">Preguntas frecuentes</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">¿Cuánto tiempo tarda una web? <span class="plus">+</span></button>
+        <div class="faq-answer"><p>Depende del tipo de proyecto. Una landing page tarda entre 2 y 3 semanas, una web completa entre 4 y 6 semanas.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Incluís dominio y hosting? <span class="plus">+</span></button>
+        <div class="faq-answer"><p>Sí, te asesoro y te ayudo con la configuración de dominio y hosting durante el primer año.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Puedo pedir cambios? <span class="plus">+</span></button>
+        <div class="faq-answer"><p>Por supuesto. Cada proyecto incluye rondas de revisión para asegurar que el resultado sea exactamente lo que necesitás.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><svg class="logo-mark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-1 4-3 6-7 7 4 1 6 3 7 7 1-4 3-6 7-7-4-1-6-3-7-7z"/></svg><span>VN</span></div>
+        <p>Diseño páginas web para pequeños negocios.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="quien-soy.html">Quién soy</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>📱 WhatsApp</li>
+          <li>✉ hola@tudominio.com</li>
+          <li>◎ Instagram</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2024 Viviana Núñez. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
