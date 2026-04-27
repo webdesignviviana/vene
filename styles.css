@@ -388,10 +388,22 @@ section { padding: 80px 0; }
 }
 .page-hero h1 { margin-bottom: 16px; }
 .page-hero p { color: var(--text-muted); font-size: 1.05rem; max-width: 480px; }
+
 .page-hero-image {
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: var(--radius);
-  overflow: hidden;
   box-shadow: var(--shadow-md);
+  object-fit: cover;
 }
 
 .about-section .about-grid {
