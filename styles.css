@@ -518,13 +518,12 @@ section { padding: 80px 0; }
 }
 
 .block-img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 450px;
+  max-width: 85%;
+  margin: 0 auto;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
+  aspect-ratio: 4 / 3;
 }
 
 .block-img img,
@@ -534,6 +533,7 @@ section { padding: 80px 0; }
   object-fit: cover;
   display: block;
 }
+
 
 .project-actions {
   display: flex;
@@ -674,14 +674,12 @@ section { padding: 80px 0; }
   .contact-form { padding: 24px; }
 }
 
+
 @media (max-width: 900px) {
   .block-img {
-    min-height: 320px;
+    max-width: 100%;
+    margin: 0;
+    aspect-ratio: 4 / 3;
   }
 }
-
-@media (max-width: 600px) {
-  .block-img {
-    min-height: 260px;
-  }
 }
