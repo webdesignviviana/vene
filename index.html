@@ -9,10 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
-<!-- Header -->
 <header class="site-header">
   <div class="container nav">
     <a href="index.html" class="logo">
@@ -34,7 +35,6 @@
   </div>
 </header>
 
-<!-- Hero -->
 <section class="hero">
   <div class="container hero-grid">
     <div>
@@ -54,7 +54,6 @@
   </div>
 </section>
 
-<!-- Mis trabajos -->
 <section>
   <div class="container">
     <div class="section-head">
@@ -78,99 +77,73 @@
   </div>
 </section>
 
-
-<!-- Servicios -->
-<section class="section-services">
+<section class="section-services" style="padding-top: 60px; padding-bottom: 60px; overflow: hidden;">
   <div class="container">
 
-    <h2 class="section-title">Servicios</h2>
-    <p class="section-sub">
-      Diseño de sitios web pensados para comunicar mejor tu marca, generar confianza y ayudarte a crecer online.
-    </p>
-
-    <div class="services-grid">
-
-      <!-- Web Esencial -->
-      <div class="service-card">
-        <div class="icon">🌐</div>
-        <h3>Web Esencial</h3>
-        <p>
-          Presencia profesional clara para negocios que necesitan empezar a posicionarse online con seriedad.
-          <br><br>
-          No es una web básica: es una base sólida para crecer.
-        </p>
-        <span class="service-price">USD 250 – 400</span>
-      </div>
-
-      <!-- Web Profesional -->
-      <div class="service-card">
-        <div class="icon">🚀</div>
-        <h3>Web Profesional</h3>
-        <p>
-          Para negocios en crecimiento que necesitan una web que acompañe su proceso de ventas.
-          <br><br>
-          Más estructura, más claridad, más intención.
-        </p>
-        <span class="service-price">USD 450 – 700</span>
-      </div>
-
-      <!-- Web Premium -->
-      <div class="service-card">
-        <div class="icon">💎</div>
-        <h3>Web Premium</h3>
-        <p>
-          Para marcas que entienden que su web es una herramienta de posicionamiento, no solo una presentación.
-          <br><br>
-          Cada detalle está pensado para diferenciar y convertir.
-        </p>
-        <span class="service-price">USD 800 – 1200</span>
-      </div>
-
-      <!-- Landing page -->
-      <div class="service-card">
-        <div class="icon">📄</div>
-        <h3>Landing Page</h3>
-        <p>
-          Página estratégica enfocada en un servicio o campaña específica para captar clientes.
-        </p>
-        <span class="service-price">USD 150 – 300</span>
-      </div>
-
-      <!-- Mantenimiento -->
-      <div class="service-card">
-        <div class="icon">🔧</div>
-        <h3>Mantenimiento mensual</h3>
-        <p>
-          Soporte, ajustes y mejoras continuas para que tu web se mantenga actualizada y funcional.
-        </p>
-        <span class="service-price">USD 50 – 100 / mes</span>
-      </div>
-
-      <!-- Ajustes -->
-      <div class="service-card">
-        <div class="icon">✨</div>
-        <h3>Ajustes puntuales</h3>
-        <p>
-          Pequeñas modificaciones o mejoras sobre una web existente.
-        </p>
-        <span class="service-price">Desde USD 20</span>
-      </div>
-
+    <div style="text-align: center; margin-bottom: 40px;">
+      <h2 class="section-title" style="margin-bottom: 10px; display: inline-block;">Servicios destacados</h2>
+      <p style="color: #666; font-size: 0.95rem; max-width: 600px; margin: 0 auto;">Sitios web pensados para comunicar mejor tu marca, generar confianza y ayudarte a crecer.</p>
     </div>
 
-    <!-- Condiciones -->
-   <div class="conditions">
-  <h3 class="conditions-title">Condiciones de trabajo</h3>
-  <ul>
-    <li>Seña del 50% para iniciar cada proyecto</li>
-    <li>Tiempo de entrega estimado: 1 a 3 semanas según alcance</li>
-    <li>Cada proyecto es único, no trabajo con plantillas genéricas</li>
-  </ul>
-</div>
+    <div class="swiper services-carousel" style="padding: 10px 5px 40px 5px;">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide" style="height: auto;">
+          <a href="services.html#landing" class="service-card service-card-link" style="height: 100%; margin: 0; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; text-align: left;">
+            <div>
+              <div class="icon" style="margin-bottom: 15px;"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></div>
+              <h3>Landing Page Estratégica</h3>
+              <p>Una página enfocada en captar clientes, vender un servicio o potenciar una campaña directa.</p>
+            </div>
+            <span class="service-price" style="display: block; margin-top: 20px;">USD 150 — 300</span>
+          </a>
+        </div>
+
+        <div class="swiper-slide" style="height: auto;">
+          <a href="services.html#web-completa" class="service-card service-card-link" style="height: 100%; margin: 0; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; text-align: left;">
+            <div>
+              <div class="icon" style="margin-bottom: 15px;"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+              <h3>Web Esencial</h3>
+              <p>Presencia profesional clara para negocios que necesitan empezar a posicionarse online con seriedad.</p>
+            </div>
+            <span class="service-price" style="display: block; margin-top: 20px;">USD 250 — 400</span>
+          </a>
+        </div>
+
+        <div class="swiper-slide" style="height: auto;">
+          <a href="services.html#rediseno" class="service-card service-card-link" style="height: 100%; margin: 0; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; text-align: left;">
+            <div>
+              <div class="icon" style="margin-bottom: 15px;"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 113 3L7 19l-4 1 1-4 12.5-12.5z"/></svg></div>
+              <h3>Web Profesional</h3>
+              <p>Para negocios en crecimiento que necesitan una web estratégica que acompañe su proceso de ventas.</p>
+            </div>
+            <span class="service-price" style="display: block; margin-top: 20px;">USD 450 — 700</span>
+          </a>
+        </div>
+
+        <div class="swiper-slide" style="height: auto;">
+          <a href="services.html#mantenimiento" class="service-card service-card-link" style="height: 100%; margin: 0; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; text-align: left;">
+            <div>
+              <div class="icon" style="margin-bottom: 15px;"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.5-2.5 2.5-2.5z"/></svg></div>
+              <h3>Web Premium</h3>
+              <p>Experiencia digital de alto nivel para marcas consolidadas que buscan diferenciarse.</p>
+            </div>
+            <span class="service-price" style="display: block; margin-top: 20px;">USD 800 — 1200</span>
+          </a>
+        </div>
+
+      </div>
+      
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div style="text-align: center; margin-top: 10px;">
+      <a href="services.html" class="btn btn-primary" style="display: inline-block; padding: 12px 30px;">Ver todos los servicios y condiciones ➔</a>
+    </div>
 
   </div>
 </section>
-<!-- ¿Cómo trabajo? -->
+
 <section>
   <div class="container">
     <h2 class="section-title" style="margin-bottom: 40px;">¿Cómo trabajo?</h2>
@@ -194,20 +167,18 @@
   </div>
 </section>
 
-<!-- CTA banner -->
 <section style="padding-top: 0;">
   <div class="container">
     <div class="cta-banner">
       <div>
         <h3>¿Querés mejorar la imagen de tu negocio?</h3>
-        <p>Hablemos sobre tu proyecto y lo hacemos realidad.</p>
+        <p>Hablemos sobre tu proyecto y lo hacemos reality.</p>
       </div>
       <a href="contacto.html" class="btn btn-primary">Contactar</a>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -236,6 +207,32 @@
     <div class="footer-bottom">© 2024 Viviana Núñez. Todos los derechos reservados.</div>
   </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.services-carousel', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 25,
+        }
+      }
+    });
+  });
+</script>
 
 <script src="main.js"></script>
 </body>
