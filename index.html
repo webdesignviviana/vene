@@ -4,13 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Viviana Núñez · Diseño web para pequeños negocios</title>
-  <meta name="description" content="Diseño páginas web profesionales y modernas para pequeños negocios. Te ayudo a tener una presencia online que conecte con tus clientes." />
+  <meta name="description" content="Diseño páginas web profesionales and modernas para pequeños negocios. Te ayudo a tener una presencia online que conecte con tus clientes." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    /* Por defecto en pantallas grandes (Computadoras) desactivamos por completo Swiper */
+    @media (min-width: 1024px) {
+      .services-carousel.swiper {
+        overflow: visible !important;
+      }
+      .services-carousel .swiper-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important; /* Forzar las 4 columnas */
+        gap: 20px !important;
+        transform: none !important;
+      }
+      .services-carousel .swiper-slide {
+        width: auto !important;
+        height: 100% !important;
+      }
+      .services-carousel .swiper-pagination {
+        display: none !important; /* Ocultar los puntitos en escritorio */
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -35,6 +57,225 @@
   </div>
 </header>
 
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1 class="hero-title">
+        Diseño páginas web
+        <span class="accent">para pequeños negocios</span>
+      </h1>
+      <p class="hero-text">Te ayudo a tener una presencia online profesional, moderna y que conecte con tus clientes.</p>
+      <div class="hero-actions">
+        <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
+        <a href="contacto.html" class="btn btn-secondary">Pedir presupuesto</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="hero.png" alt="Desk" />
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Mis trabajos</h2>
+      <a href="proyectos.html" class="link-arrow">Ver todos →</a>
+    </div>
+    <div class="projects-grid">
+      <a href="proyecto.html" class="project-card">
+        <div class="img-wrap"><img src="PradoGlow.png" alt="Prado Glow Studio" loading="lazy" /></div>
+        <div class="card-body"><h3>Prado Glow Studio</h3><p>Estudio de belleza</p></div>
+      </a>
+      <a href="proyecto.html" class="project-card">
+        <div class="img-wrap"><img src="GLTech.png" alt="GLTech" loading="lazy" /></div>
+        <div class="card-body"><h3>GLTech</h3><p>Tecnología</p></div>
+      </a>
+      <a href="proyecto.html" class="project-card">
+        <div class="img-wrap"><img src="images/project-nexo.jpg" alt="Nexo" loading="lazy" /></div>
+        <div class="card-body"><h3>Nexo</h3><p>Consultoría</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section-services" style="padding-top: 60px; padding-bottom: 60px; overflow: hidden;">
+  <div class="container">
+
+    <div style="text-align: center; margin-bottom: 40px;">
+      <h2 class="section-title" style="margin-bottom: 10px; display: inline-block;">Servicios destacados</h2>
+      <p style="color: #666; font-size: 0.95rem; max-width: 600px; margin: 0 auto;">Sitios web pensados para comunicar mejor tu marca, generar confianza y ayudarte a crecer.</p>
+    </div>
+
+    <div class="swiper services-carousel" style="padding: 10px 5px 40px 5px;">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide" style="height: auto;">
+          <a href="services.html#landing" class="service-card service-card-link" style="height: 100%; margin: 0; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; text-align: left;">
+            <div>
+              <div class="icon" style="margin-bottom: 15px;"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg></div>
+              <h3>Landing Page Estratégica</h3>
+              <p>Una página enfocada en captar clientes, vender un servicio o potenciar una campaña directa.</p>
+            </div>
+            <span class="service-price" style="display: block; margin-top: 20px;">USD 150 — 300</span>
+          </a>
+        </div>
+
+        <div class="swiper-slide" style="height: auto;">
+          <a href="services.html#web-completa" class="service-card service-card-link" style="height: 100%; margin: 0; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; text-align: left;">
+            <div>
+              <div class="icon" style="margin-bottom: 15px;"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+              <h3>Web Esencial</h3>
+              <p>Presencia profesional clara para negocios que necesitan empezar a posicionarse online con seriedad.</p>
+            </div>
+            <span class="service-price" style="display: block; margin-top: 20px;">USD 250 — 400</span>
+          </a>
+        </div>
+
+        <div class="swiper-slide" style="height: auto;">
+          <a href="services.html#rediseno" class="service-card service-card-link" style="height: 100%; margin: 0; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; text-align: left;">
+            <div>
+              <div class="icon" style="margin-bottom: 15px;"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 113 3L7 19l-4 1 1-4 12.5-12.5z"/></svg></div>
+              <h3>Web Profesional</h3>
+              <p>Para negocios en crecimiento que necesitan una web estratégica que acompañe su proceso de ventas.</p>
+            </div>
+            <span class="service-price" style="display: block; margin-top: 20px;">USD 450 — 700</span>
+          </a>
+        </div>
+
+        <div class="swiper-slide" style="height: auto;">
+          <a href="services.html#mantenimiento" class="service-card service-card-link" style="height: 100%; margin: 0; display: flex; flex-direction: column; justify-content: space-between; text-decoration: none; text-align: left;">
+            <div>
+              <div class="icon" style="margin-bottom: 15px;"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.5-2.5 2.5-2.5z"/></svg></div>
+              <h3>Web Premium</h3>
+              <p>Experiencia digital de alto nivel para marcas consolidadas que buscan diferenciarse.</p>
+            </div>
+            <span class="service-price" style="display: block; margin-top: 20px;">USD 800 — 1200</span>
+          </a>
+        </div>
+
+      </div>
+      
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div style="text-align: center; margin-top: 10px;">
+      <a href="services.html" class="btn btn-primary" style="display: inline-block; padding: 12px 30px;">Ver todos los servicios y condiciones ➔</a>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title" style="margin-bottom: 40px;">¿Cómo trabajo?</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h4>1. Hablamos</h4>
+        <p>Me contás tu idea y objetivos.</p>
+      </div>
+      <div class="step">
+        <div class="icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7H12v-3z"/><path d="M18 13l-1.5-1.5"/></svg></div>
+        <h4>2. Diseño tu web</h4>
+        <p>Creo un proyecto a medida para tu negocio.</p>
+      </div>
+      <div class="step">
+        <div class="icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h4>3. La publicamos</h4>
+        <p>Pongo tu web online para que empieces a crecer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h3>¿Querés mejorar la imagen de tu negocio?</h3>
+        <p>Hablemos sobre tu proyecto y lo hacemos realidad.</p>
+      </div>
+      <a href="contacto.html" class="btn btn-primary">Contactar</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><svg class="logo-mark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-1 4-3 6-7 7 4 1 6 3 7 7 1-4 3-6 7-7-4-1-6-3-7-7z"/></svg><span>VN</span></div>
+        <p>Diseño páginas web para pequeños negocios.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="quien-soy.html">Quién soy</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>📱 WhatsApp</li>
+          <li>✉ hola@tudominio.com</li>
+          <li>◎ Instagram</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2024 Viviana Núñez. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let swiperInstance = null;
+
+    function initSwiper() {
+      if (window.innerWidth < 1024) {
+        if (!swiperInstance) {
+          swiperInstance = new Swiper('.services-carousel', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            grabCursor: true,
+            loop: true,               // Hace que el carrusel sea infinito
+            autoplay: {
+              delay: 3000,            // Pasa cada 3 segundos automáticamente
+              disableOnInteraction: false, // Sigue pasando solo aunque el usuario lo toque
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              }
+            }
+          });
+        }
+      } else {
+        if (swiperInstance) {
+          swiperInstance.destroy(true, true);
+          swiperInstance = null;
+        }
+      }
+    }
+
+    initSwiper();
+    window.addEventListener('resize', initSwiper);
+  });
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
 <section class="hero">
   <div class="container hero-grid">
     <div>
